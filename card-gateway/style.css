@@ -60,7 +60,7 @@ nav a {
   font-weight: 500;
 }
 .text-logo img {
-  height: 25px;
+  height: 35px;
 }
 span {
   font-weight: 200;
@@ -132,8 +132,6 @@ span {
 }
 .brand-name {
   margin-top: 50px;
-  display: flex;
-  justify-content: right;
 }
 .logo-and-language {
   justify-content: flex-end;
