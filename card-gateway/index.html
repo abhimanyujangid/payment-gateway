@@ -13,13 +13,17 @@
           <img src="logo1.png" alt="" />
         </div>
         <div class="lang-switch">
-          <a href="#" class="nav-text">Secure Checkout</a>
+          <a href="#" class="nav-text"
+            ><img src="lock-icon.svg" alt="" /> Secure Checkout</a
+          >
         </div>
       </div>
     </nav>
     <div class="main-container">
       <div class="left-section">
-        <div class="back"><a href="#">&#8592; Back</a></div>
+        <div class="back">
+          <a href="#"><img src="angle-small-left.png" alt="" />Back</a>
+        </div>
         <div class="text-logo">
           <p>Credit or Debit card</p>
           <img src="mastercaed.png" alt="" />
@@ -47,6 +51,7 @@
                   id="cardholder-name"
                   name="cardholder-name"
                   required
+                  placeholder=" 00 / 00"
                   style="width: 95%"
                 />
               </div>
@@ -66,8 +71,8 @@
             </div>
             <div class="brand-name">
               <div class="logo-and-language">
-                <p>Language</p>
-                <div>Powered by <img src="" alt="" /></div>
+                <div class="logo-text"><p>Powered by</p></div>
+                <div class="logo-img"><img src="logo1.png" alt="" /></div>
               </div>
             </div>
           </form>
@@ -77,7 +82,10 @@
         <div class="order-summary">
           <h3>Order summary</h3>
           <p>Order #100235131</p>
-          <p>Total: MUR Rs12,990.00</p>
+          <hr />
+          <div class="total-value">
+            <p>Total: MUR Rs12,990.00</p>
+          </div>
         </div>
       </div>
     </div>
