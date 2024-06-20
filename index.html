@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="#" class="nav-text">Price Guru</a>
+        <div class="lang-switch">
+          <a href="#" class="nav-text">Secure Checkout</a>
+        </div>
+      </div>
+    </nav>
+    <div class="main-container">
+      <div class="left-section">
+        <div class="back"><a href="#">&#8592; Back</a></div>
+        <div class="text-logo">
+          <p>Credit or Debit card</p>
+          <img src="mastercaed.png" alt="" />
+        </div>
+        <div class="payment-form">
+          <form>
+            <label for="cardholder-name"
+              >Cardholder name <span>(exactly as shown on card)</span></label
+            >
+            <input
+              type="text"
+              id="cardholder-name"
+              name="cardholder-name"
+              required
+            />
+
+            <label for="card-number">Card number</label>
+            <input type="text" id="card-number" name="card-number" required />
+
+            <div class="expiry-security">
+              <div class="Security">
+                <label for="Security-date">Expire Date</label><br /><br />
+                <input
+                  type="month"
+                  id="cardholder-name"
+                  name="cardholder-name"
+                  required
+                  class="security-input"
+                />
+              </div>
+              <div class="Security">
+                <label for="Security-code">Security code</label><br /><br />
+                <input
+                  type="password"
+                  id="cardholder-name"
+                  name="cardholder-name"
+                  required
+                  class="security-input"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">Pay Rs12,990.00</button>
+            </div>
+            <div class="brand-name">
+              <p>Ptice Guru</p>
+              <div class="logo-and-language">
+                <p>Language</p>
+                <img src="logo.png" alt="" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="right-section">
+        <div class="order-summary">
+          <h3>Order summary</h3>
+          <p>Order #100235131</p>
+          <p>Total: MUR Rs12,990.00</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
