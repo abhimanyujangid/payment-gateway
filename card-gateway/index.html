@@ -30,37 +30,49 @@
         </div>
         <div class="payment-form">
           <form>
-            <label for="cardholder-name"
-              >Cardholder name <span>(exactly as shown on card)</span></label
-            >
+            <label for="cardholder-name">
+              Cardholder name <span>(exactly as shown on card) <b>*</b></span
+              ><img class="cardholder-name-img" src="person.svg" alt=""
+            /></label>
             <input
               type="text"
               id="cardholder-name"
+              placeholder="Cardholder Name"
               name="cardholder-name"
               required
             />
 
-            <label for="card-number">Card number</label>
-            <input type="text" id="card-number" name="card-number" required />
+            <label for="card-number"
+              >Card number <b>*</b
+              ><img
+                class="cardholder-name-img"
+                src="credit-card-2-back-fill.svg"
+                alt=""
+            /></label>
+            <input
+              type="text"
+              id="card-number"
+              name="card-number"
+              placeholder="Card Number"
+              required
+            />
 
             <div class="expiry-security">
               <div class="Security">
-                <label for="Security-date">Expire Date</label>
+                <label for="Security-date">Expire Date <b>*</b></label>
                 <input
                   type="text"
-                  id="cardholder-name"
-                  name="cardholder-name"
+                  name="expire date"
                   required
-                  placeholder=" 00 / 00"
+                  placeholder=" MM / YY"
                   style="width: 95%"
                 />
               </div>
               <div class="Security">
-                <label for="Security-code">Security code</label>
+                <label for="Security-code">Security code <b>*</b></label>
                 <input
                   type="text"
-                  id="cardholder-name"
-                  name="cardholder-name"
+                  name="Security code"
                   required
                   style="width: 100%"
                 />

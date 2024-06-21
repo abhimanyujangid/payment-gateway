@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="description">
+        <h1>Order Summary</h1>
+        <p>Product Name: XYZ Product</p>
+        <p>Quantity: 1</p>
+        <p>Price per Unit: MUR 12,990.00</p>
+        <p>Total Payment: MUR 12,990.00</p>
+        <div class="logo"><img src="logo1.png" alt="" /></div>
+      </div>
+      <div class="payment-form">
+        <h2>Payment Details</h2>
+        <form>
+          <div class="input-group">
+            <label for="cardholder-name"
+              ><span class="icon">👤</span> Cardholder Name</label
+            >
+            <input
+              type="text"
+              id="cardholder-name"
+              name="cardholder-name"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="card-number"
+              ><span class="icon">💳</span> Card Number</label
+            >
+            <input type="text" id="card-number" name="card-number" required />
+          </div>
+          <div class="input-group">
+            <label for="expiry-date"
+              ><span class="icon">📅</span> Expiry Date</label
+            >
+            <input
+              type="text"
+              id="expiry-date"
+              name="expiry-date"
+              placeholder="MM / YY"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="security-code"
+              ><span class="icon">🔒</span> Security Code</label
+            >
+            <input
+              type="text"
+              id="security-code"
+              name="security-code"
+              required
+            />
+          </div>
+          <button type="submit">Pay Now</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
