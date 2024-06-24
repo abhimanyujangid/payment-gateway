@@ -25,11 +25,14 @@
           <p>ALL TRANSACTIONS ARE SECURED & ENCRYPTED</p>
         </div>
         <div class="card-option" id="card">
-          <input type="radio" name="payment">
+          <label class="checkbox-btn">
+            <input id="checkbox" type="radio">
+            <span class="checkmark"></span>
+          </label>
           <p>CREDIT CARDS</p>
           <div class="card-img">
-            <img src="public/visa.svg" alt="">
-            <img src="public/mc_symbol.svg" alt="">
+            <img src="public/visa.svg" alt="visa-card">
+            <img src="public/mc_symbol.svg" alt="mastercard" id="mastercard">
           </div>
         </div>
         <div class="card-option-bottom" id="card-option-bottom">
@@ -38,10 +41,21 @@
             COMPLETE YOUR PURCHASE <br> SECURELY.</p>
         </div>
         <div class="card-option" id="qr-code">
-          <input type="radio" name="payment">
+          <label class="checkbox-btn">
+            <label for="checkbox"></label>
+            <input id="checkbox" type="radio">
+            <span class="checkmark"></span>
+          </label>
           <p>PAY SECURE (MAUCAS, CARD, WALLET OR NETBANKING )</p>
         </div>
+        <button class="card-button" id="card-button">
+          <span class="button-content">
+            <p>PAY NOW</p>
+          </span>
+        </button>
+
       </div>
+
     </section>
     <section class="right-section">
       <div class="right-section-inside">
@@ -60,6 +74,27 @@
         <div class="right-section-qrcode" id="right-section-qrcode">
           <div class="right-sectioni-qrcode-img">
             <img src="public/merchant_qr_code.png" alt="">
+          </div>
+        </div>
+
+        <div class="merchant-datils">
+          <div class="merchant-details-data">
+            <div class="merchant-static">
+              <p>MERCHANT DETAILS</p>
+              <p>SUBTOTAL</p>
+              <p>SHIPPING</p>
+            </div>
+            <div class="merchant-daynamic">
+              <p>MC DONALDS</p>
+              <p>MUR 123</p>
+              <p>ENTER SHIPPING ADDRESS</p>
+            </div>
+          </div>
+          <div class="merchant-total">
+            <div class="merchant-totals">
+              <h4>TOTAL</h4>
+              <p>MUR <span>123.25</span></p>
+            </div>
           </div>
         </div>
       </div>
