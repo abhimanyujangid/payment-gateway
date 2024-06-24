@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>payment </title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;800&display=swap" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="navcontainer">
+        <img src="public/logo.png" alt="">
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="left-section">
+      <div class="left-section-inside">
+        <div class="tagline">
+          <h1>PAYMENT</h1>
+          <p>ALL TRANSACTIONS ARE SECURED & ENCRYPTED</p>
+        </div>
+        <div class="card-option" id="card">
+          <input type="radio" name="payment">
+          <p>CREDIT CARDS</p>
+          <div class="card-img">
+            <img src="public/visa.svg" alt="">
+            <img src="public/mc_symbol.svg" alt="">
+          </div>
+        </div>
+        <div class="card-option-bottom" id="card-option-bottom">
+          <div class="card-option-bottom-img"><img src="public/card.png" alt=""></div>
+          <p>AFTER CLICKING “PAY NOW”, YOU WILL BE <br>REDIRECTED TO SECURE (MAUCAS, CARDS, WALLETS,<br>NETBANKING) TO
+            COMPLETE YOUR PURCHASE <br> SECURELY.</p>
+        </div>
+        <div class="card-option" id="qr-code">
+          <input type="radio" name="payment">
+          <p>PAY SECURE (MAUCAS, CARD, WALLET OR NETBANKING )</p>
+        </div>
+      </div>
+    </section>
+    <section class="right-section">
+      <div class="right-section-inside">
+        <!-- cradit form -->
+        <div class="card-deatils" id="card-deatils">
+          <div class="card-details-inside">
+            <input type="text" name="" id="" placeholder="CARD NUMBER">
+            <div class="card-details-inside-security">
+              <input type="text" name="" id="" placeholder="EXPIRATION DATE (MM/YY)">
+              <input type="text" name="" id="" placeholder="SECURITY CODE">
+            </div>
+            <input type="text" name="" id="" placeholder="NAME OF CARD">
+          </div>
+        </div>
+        <!-- Qrcode  -->
+        <div class="right-section-qrcode" id="right-section-qrcode">
+          <div class="right-sectioni-qrcode-img">
+            <img src="public/merchant_qr_code.png" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+<script type="module" src="script.js"></script>
+
+</html>
