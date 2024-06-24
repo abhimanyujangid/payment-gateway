@@ -43,6 +43,11 @@ main {
 .tagline p {
   color: grey;
 }
+
+.tagline h2{
+  color: rgb(73, 73, 73)
+}
+
 .card-option {
   height: 60px;
   cursor: pointer;
@@ -99,10 +104,14 @@ main {
   width: 90%;
   background-color: rgb(219, 219, 219);
   padding: 25px;
-  display: none;
   border-radius: 10px;
 }
-.card-details.show {
+
+.payment-details{
+  display: none;
+}
+
+.payment-details.show {
   display: block;
 }
 .card-details input {
@@ -118,6 +127,14 @@ main {
 .card-details-inside{
   display: block;
   text-align: center;
+}
+
+.card-details-inside label {
+  display: block;
+  text-align: left;
+  position: relative;
+  left: 49px;
+  color: rgb(133, 133, 133);
 }
 
 .card-button {
