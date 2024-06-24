@@ -1,0 +1,397 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-roboto: Roboto;
+  
+    /* font sizes */
+    --font-size-mini: 15px;
+    --font-size-xl: 20px;
+    --font-size-3xl: 22px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-black: #000;
+    --color-dimgray-100: #676565;
+  }
+
+.blueprint-icon,
+.image-1-icon {
+  position: absolute;
+  margin-left: 120px;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  width: 1280px;
+  height: 832px;
+}
+.image-1-icon {
+  left: 141px;
+  width: 203px;
+  height: 50px;
+  object-fit: cover;
+}
+.shipping,
+.subtotal {
+  position: absolute;
+  top: 43px;
+  left: 0;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.shipping {
+  top: 86px;
+  left: 2px;
+}
+.total {
+  top: 136px;
+  left: 2px;
+  font-size: var(--font-size-3xl);
+  color: #010101;
+}
+.including-100-in,
+.mur-1234,
+.total {
+  position: absolute;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.including-100-in {
+  top: 176px;
+  left: 2px;
+  font-size: 16px;
+  color: #818181;
+}
+.mur-1234 {
+  top: 43px;
+  left: 358px;
+  color: var(--color-dimgray-100);
+}
+.enter-shipping-address {
+  top: 86px;
+  left: 268px;
+  color: #868686;
+}
+.b,
+.enter-shipping-address,
+.mc-donalds,
+.merchant-details,
+.mur {
+  position: absolute;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.mur {
+  top: 136px;
+  left: 334px;
+  font-size: var(--font-size-3xl);
+  color: #1b1b1b;
+}
+.b,
+.mc-donalds,
+.merchant-details {
+  top: 0;
+}
+.mc-donalds {
+  left: 342px;
+  color: var(--color-dimgray-100);
+}
+.b,
+.merchant-details {
+  left: 0;
+}
+.b {
+  top: 136px;
+  left: 383px;
+  font-size: var(--font-size-3xl);
+}
+.payment-details,
+.payment-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 516px;
+  height: 187px;
+}
+.payment-details {
+  top: 417px;
+  margin-left: 150px;
+}
+.merchant-qr-code-1-icon {
+  position: absolute;
+  top: 69px;
+  left: 103px;
+  border-radius: 12px;
+  margin-left: 120px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.right-side {
+    position: absolute;
+    top: 93px;
+    left: 50%;
+    width: calc(50% - 1px);
+    height: calc(100% - 93px);
+    background-color: #f4f4f4;
+}
+
+.pay-secure-child,
+.pay-secure-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  width: 527px;
+  height: 339px;
+}
+.pay-secure-item {
+  top: 40px;
+  left: 7px;
+  border-radius: 50%;
+  background-color: #8e6fee;
+  border: 1px solid #6e47e5;
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+}
+.pay-secure-inner {
+  position: absolute;
+  top: 425px;
+  left: 0;
+  border-radius: 9px;
+  background-color: #9573ef;
+  width: 527px;
+  height: 58px;
+}
+.pay-secure-maucas {
+  margin: 0;
+}
+.pay-secure-maucas-container {
+  top: 36px;
+  left: 30px;
+  display: inline-block;
+  width: 327px;
+  height: 37px;
+}
+.after-clicking-pay,
+.pay-now,
+.pay-secure-maucas-container {
+  position: absolute;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.pay-now {
+  position: absolute;
+  top: 447px;
+  left: 210px;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+}
+.after-clicking-pay {
+  top: 246px;
+  left: 106px;
+  font-size: 12px;
+  color: #686868;
+  display: inline-block;
+  width: 295px;
+  height: 70px;
+}
+.screenshot-2024-06-21-at-143 {
+  position: absolute;
+  top: 122px;
+  left: 149px;
+  width: 158px;
+  height: 96px;
+  object-fit: cover;
+}
+.line-div {
+  position: absolute;
+  top: 85px;
+  left: 0;
+  border-top: 1px solid #d5d5d5;
+  box-sizing: border-box;
+  width: 528px;
+  height: 1px;
+}
+.credit-window-child,
+.pay-secure {
+  position: absolute;
+  top: 61px;
+  left: 0;
+  width: 527px;
+  height: 483px;
+}
+.credit-window-child {
+  top: 72px;
+  height: 1px;
+  object-fit: contain;
+}
+.credit-cards {
+  position: absolute;
+  top: 32px;
+  left: 30px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.credit-window-item {
+  position: absolute;
+  top: 29px;
+  left: 5px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  border: 1px solid #a2a2a2;
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+}
+.amex1-1-icon,
+.mastercard-1-icon,
+.png-transparent-visa-logo-cred-icon,
+.rupay-1-icon {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 80px;
+  height: 47.2px;
+  object-fit: cover;
+  mix-blend-mode: darken;
+}
+.amex1-1-icon,
+.mastercard-1-icon,
+.rupay-1-icon {
+  top: 12px;
+  left: 184px;
+  width: 72px;
+  height: 35px;
+}
+.mastercard-1-icon,
+.rupay-1-icon {
+  top: 8px;
+  left: 92px;
+  width: 80px;
+  height: 42px;
+}
+.rupay-1-icon {
+  position: absolute;
+  top: 18;
+  left: 268px;
+  width: 72px; /* Standardized width */
+  height: 45px; /* Standardized height */
+  object-fit: cover;
+  mix-blend-mode: darken; /* Blend mode for darkening effect */
+}
+
+.cards,
+.credit-window {
+  position: absolute;
+  top: 9px;
+  left: 148px;
+  width: 348.4px;
+  height: 52.2px;
+}
+.credit-window {
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  background-color: var(--color-white);
+  border: 1px solid #d3d3d3;
+  box-sizing: border-box;
+  width: 529px;
+  height: 74px;
+  overflow: hidden;
+  color: var(--color-black);
+}
+.channels {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 527px;
+  height: 544px;
+}
+.all-transactions-are,
+.payment {
+  left: 0;
+  line-height: 150%;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: inline-block;
+}
+.payment {
+  position: absolute;
+  top: 0;
+  width: 228px;
+  height: 65px;
+}
+.all-transactions-are {
+  top: 33px;
+  font-size: var(--font-size-mini);
+  color: #a4a4a4;
+  height: 32px;
+}
+.all-transactions-are,
+.left-side,
+.payment-header {
+  position: absolute;
+  width: 594px;
+}
+.payment-header {
+  top: 0;
+  left: 0;
+  height: 65px;
+  font-size: 25px;
+  color: #484848;
+}
+.left-side {
+  top: 128px;
+  left: 44px;
+  height: 634px;
+  font-size: var(--font-size-mini);
+  color: #0f0e0e;
+}
+.qr-code {
+  width: 100%;
+  position: relative;
+  height: 832px;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}
+
+  .line-div {
+    border-right: 1px solid #ccc; /* Or any other color */
+    height: 100%;
+    margin-right: 20px; /* Adjust as needed */
+  }
+
+  .navbar {
+    border-bottom: 1px solid #ccc; /* Grey border */
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    
+  }
+
+
+  .line-divider {
+    position: absolute;
+    top: 93px; /* Adjust top position to start below the navbar */
+    left: 50%;
+    width: 1px; /* Adjust thickness of the line */
+    height: calc(100% - 65px); /* Calculate height to fit remaining space */
+    background-color: #ccc; /* Adjust color of the line */
+    transform: translateX(-50%);
+  }
+
+
+
+.right-side {
+    box-sizing: border-box;
+    padding: 20px;
+}
+ 
