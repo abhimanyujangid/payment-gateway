@@ -56,6 +56,15 @@ main {
   border-width: thin;
 }
 
+.second p{
+  padding-right: 15px;
+}
+
+.card-details-inside-security img{
+  width: 20px;
+  height: 20px;
+}
+
 .card-option input {
   margin: 0 20px;
 }
@@ -67,7 +76,7 @@ main {
 }
 #mastercard {
   position: relative;
-  top: -7px;
+  top: -6px;
 }
 .card-option-bottom {
   background-color: whitesmoke;
@@ -86,16 +95,17 @@ main {
   color: rgb(189, 189, 189);
 }
 
-.card-deatils {
-  background-color: rgb(207, 205, 205);
+.card-details {
+  width: 90%;
+  background-color: rgb(219, 219, 219);
   padding: 25px;
   display: none;
   border-radius: 10px;
 }
-.card-deatils.show {
+.card-details.show {
   display: block;
 }
-.card-deatils input {
+.card-details input {
   margin: 10px;
   padding-left: 15px;
   width: 80%;
@@ -105,14 +115,27 @@ main {
   border-color: whitesmoke;
 }
 
+.card-details-inside{
+  display: block;
+  text-align: center;
+}
+
 .card-button {
   margin: 50px;
-  width: 80%;
+  width: 85%;
   height: 50px;
+  color: white;
   border-radius: 5px;
+  cursor: pointer;
   border: none;
-  background-color: rgb(203, 177, 218);
+  background-color: #9573EF;
 }
+
+.card-button:hover{
+  background-color: #8059ed;
+  color: white;
+}
+
 .button span p {
   font-size: 1rem;
   font-weight: 500;
@@ -122,6 +145,12 @@ main {
 }
 .card-button.show {
   display: inline;
+}
+
+.maucas-img{
+  padding-bottom: 20px;
+  width: 40px;
+  height: 10px;
 }
 .qr-option p {
   font-size: 0.8 rem;
@@ -161,7 +190,7 @@ main {
   display: flex;
 }
 .merchant-totals h4 {
-  width: 120%;
+  width: 112%;
   font-size: 1.5rem;
   align-items: center;
   font-weight: 600;
