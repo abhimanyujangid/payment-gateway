@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('card').click();
+});
+
 document.getElementById('card').addEventListener('click', function() {
   document.querySelector('#card input[type="radio"]').checked = true;
   document.getElementById('card-option-bottom').classList.add('show');
@@ -8,6 +12,7 @@ document.getElementById('card').addEventListener('click', function() {
   document.getElementById('card-details').classList.add('show');
   document.getElementById('right-section-qrcode').classList.remove('show');
 });
+
 document.getElementById('qr-code').addEventListener('click', function() {
   document.querySelector('#qr-code input[type="radio"]').checked = true;
   document.querySelector('#card input[type="radio"]').checked = false;
