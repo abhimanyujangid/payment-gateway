@@ -21,7 +21,7 @@
     <section class="left-section">
       <div class="left-section-inside">
         <div class="tagline">
-          <h1>PAYMENT</h1>
+          <h2>PAYMENT</h2>
           <p>ALL TRANSACTIONS ARE SECURED & ENCRYPTED</p>
         </div>
         <div class="card-option" id="card">
@@ -40,15 +40,16 @@
           <p>AFTER CLICKING “PAY NOW”, YOU WILL BE <br>REDIRECTED TO SECURE (MAUCAS, CARDS, WALLETS,<br>NETBANKING) TO
             COMPLETE YOUR PURCHASE <br> SECURELY.</p>
         </div>
-        <div class="card-option" id="qr-code">
+        <div class="card-option second" id="qr-code">
           <label class="checkbox-btn">
             <label for="checkbox"></label>
             <input id="checkbox" type="radio">
             <span class="checkmark"></span>
           </label>
-          <p>PAY SECURE (MAUCAS, CARD, WALLET OR NETBANKING )</p>
+          <p>SCAN & PAY ( MAUCAS ) </p>
+          <img src="public/qr-code-1.png" alt="" height="30px">
         </div>
-        <button class="card-button" id="card-button">
+        <button class="card-button" id="card-button" onclick="">
           <span class="button-content">
             <p>PAY NOW</p>
           </span>
@@ -59,20 +60,31 @@
     </section>
     <section class="right-section">
       <div class="right-section-inside">
-        <!-- cradit form -->
-        <div class="card-deatils" id="card-deatils">
+        <!-- credit form -->
+        <div class="payment-details" id="payment-details">
+        <h3>Card Details</h3>
+        <div class="card-details" id="card-details">
           <div class="card-details-inside">
-            <input type="text" name="" id="" placeholder="CARD NUMBER">
+            <label for="card-number">Card Number</label>
+            <input type="text" name="" id="" placeholder="0000 0000 0000">
+              <label for="expiry-date">Expiry Date</label>
+              <input type="text" name="" id="" placeholder="MM/YY">
             <div class="card-details-inside-security">
-              <input type="text" name="" id="" placeholder="EXPIRATION DATE (MM/YY)">
-              <input type="text" name="" id="" placeholder="SECURITY CODE">
+              <label for="cvc">CVC</label>
+              <input type="text" name="" id="" placeholder="***">
             </div>
-            <input type="text" name="" id="" placeholder="NAME OF CARD">
+            <div class="card-details-inside-security">
+              <label for="name-on-card">Name On Card</label>
+              <input type="text" name="" id="" placeholder="Card Holder Name">
+            </div>
+            
           </div>
+        </div>
         </div>
         <!-- Qrcode  -->
         <div class="right-section-qrcode" id="right-section-qrcode">
           <div class="right-sectioni-qrcode-img">
+            <img class="maucas-img" src="public/maucas.png" alt="">
             <img src="public/merchant_qr_code.png" alt="">
           </div>
         </div>
@@ -81,19 +93,17 @@
           <div class="merchant-details-data">
             <div class="merchant-static">
               <p>MERCHANT DETAILS</p>
-              <p>SUBTOTAL</p>
               <p>SHIPPING</p>
             </div>
             <div class="merchant-daynamic">
               <p>MC DONALDS</p>
-              <p>MUR 123</p>
               <p>ENTER SHIPPING ADDRESS</p>
             </div>
           </div>
           <div class="merchant-total">
             <div class="merchant-totals">
               <h4>TOTAL</h4>
-              <p>MUR <span>123.25</span></p>
+              <p>MUR <span>12,890.00</span></p>
             </div>
           </div>
         </div>
