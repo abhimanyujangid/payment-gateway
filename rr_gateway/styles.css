@@ -96,7 +96,8 @@ select {
   justify-content: space-between;
 }
 
-/* Right section */
+/* Right section --------------------------------------- */
+
 order-summary .header .title {
   font-size: 24px;
   margin: 0;
@@ -109,7 +110,6 @@ order-summary .header .title {
 }
 
 .order-summary .product-list {
-  border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -118,7 +118,6 @@ order-summary .header .title {
   display: flex;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px solid #ccc;
 }
 
 .order-summary .product .product-image img {
