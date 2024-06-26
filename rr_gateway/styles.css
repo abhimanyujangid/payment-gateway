@@ -67,6 +67,10 @@ select {
 #country {
   height: 50px;
 }
+.first-last {
+  display: flex;
+  gap: 20px;
+}
 
 .city-postal-add {
   display: flex;
