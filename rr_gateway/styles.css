@@ -96,8 +96,24 @@ select {
   justify-content: space-between;
 }
 
-/* Right section --------------------------------------- */
+.payment-container p {
+  color: grey;
+  margin: 10px 0;
+}
 
+.payment-option {
+  border: 1px solid whitesmoke;
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+
+.payment-option input span h3 {
+  margin: 0 15px;
+  font-weight: 200;
+}
+
+/* Right section------------------------------------- */
 order-summary .header .title {
   font-size: 24px;
   margin: 0;
@@ -110,6 +126,7 @@ order-summary .header .title {
 }
 
 .order-summary .product-list {
+  border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -118,6 +135,7 @@ order-summary .header .title {
   display: flex;
   align-items: center;
   padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
 .order-summary .product .product-image img {

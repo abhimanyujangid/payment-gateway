@@ -18,7 +18,6 @@
     </nav>
   </header>
   <main>
-<<<<<<< HEAD
     <section class="left-side">
       <section class="contact">
         <div class="contact-log">
@@ -54,10 +53,71 @@
           <p>Rs 200.00</p>
         </div>
       </section>
+      <!-- Payment -->
+      <section class="payment-section">
+        <div class="payment-container">
+          <h1>Payment</h1>
+          <p>All transactions are secure and encrypted.</p>
+          <form class="payment-options">
+            <label class="payment-option">
+              <input type="radio" name="payment" value="bank_transfer" onclick="selectOption(this)">
+              <span>
+                <h3>BANK TRANSFER</h3>
+              </span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="mcb_transfer" onclick="selectOption(this)">
+              <span>
+                <h3>MCB TRANSFER OR JUICE</h3>
+              </span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="cash_deposit" onclick="selectOption(this)">
+              <span>
+                <h3>CASH DEPOSIT AT BANK</h3>
+              </span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="myt" onclick="selectOption(this)">
+              <span>
+                <h3>PAY with My.t</h3>
+              </span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="cim_finance" onclick="selectOption(this)">
+              <span>
+                <h3>PAY WITH CIM FINANCE</h3>
+              </span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="pop_credit_card" onclick="selectOption(this)">
+              <span>
+                <h3>POP OR CREDIT CARD PAYMENT</h3>
+              </span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="blink_emtel" onclick="selectOption(this)">
+              <span>
+                <h3>blink by Emtel</h3>
+              </span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="rogers_capital" onclick="selectOption(this)">
+              <span>
+                <h3>PAY WITH ROGERS CAPITAL</h3>
+              </span>
+            </label>
+          </form>
+        </div>
+      </section>
     </section>
     <section class="right-side">
       <link rel="stylesheet" href="right.css">
+      <link rel="stylesheet" href="right_side.css">
       <div class="order-summary">
+        <div class="header">
+          <h2 class="title">Order summary</h2>
+        </div>
         <aside>
           <div class="shopping-cart">
             <div class="product-list">
@@ -75,6 +135,7 @@
           <div class="discount-form">
             <form action="" method="POST" id="discountForm">
               <div class="input-field">
+                <label for="couponCode">Coupon Code</label>
                 <input type="text" id="couponCode" name="couponCode" placeholder="Enter coupon code">
               </div>
               <button type="submit" disabled>Apply</button>
@@ -82,11 +143,11 @@
           </div>
           <div class="cost-summary">
             <div class="cost-item">
-              <p>Subtotal</p>
+              <div class="label">Subtotal</div>
               <div class="value">Rs&nbsp;504.00</div>
             </div>
             <div class="cost-item">
-              <p>Shipping</p>
+              <div class="label">Shipping</div>
               <div class="value">Rs&nbsp;200.00</div>
             </div>
             <div class="cost-item total">
@@ -96,56 +157,6 @@
           </div>
         </aside>
       </div>
-=======
-    <section class="left-side">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum cumque
-      voluptatibus quas totam est ut, porro perferendis? Dolore soluta quis nobis mollitia aliquid quas iste, odio
-      pariatur eligendi alias.</section>
-      <section class="right-side">
-        <link rel="stylesheet" href="right.css">
-        <link rel="stylesheet" href="right_side.css">
-        <div class="order-summary">
-            <div class="header">
-                <h2 class="title">Order summary</h2>
-            </div>
-            <aside>
-                <div class="shopping-cart">
-                    <div class="product-list">
-                        <div class="product">
-                            <div class="product-image">
-                                <img src="https://cdn.shopify.com/s/files/1/0259/9531/3248/files/D11369_64x64.jpg?v=1715931786" alt="Product Image">
-                            </div>
-                            <div class="description">Mustard Slim Fit Essential Crew Neck T-Shirt</div>
-                            <div class="quantity">1 x</div>
-                            <div class="price">Rs&nbsp;504.00</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="discount-form">
-                    <form action="" method="POST" id="discountForm">
-                        <div class="input-field">
-                            <label for="couponCode">Coupon Code</label>
-                            <input type="text" id="couponCode" name="couponCode" placeholder="Enter coupon code">
-                        </div>
-                        <button type="submit" disabled>Apply</button>
-                    </form>
-                </div>
-                <div class="cost-summary">
-                    <div class="cost-item">
-                        <div class="label">Subtotal</div>
-                        <div class="value">Rs&nbsp;504.00</div>
-                    </div>
-                    <div class="cost-item">
-                        <div class="label">Shipping</div>
-                        <div class="value">Rs&nbsp;200.00</div>
-                    </div>
-                    <div class="cost-item total">
-                        <div class="label">Total</div>
-                        <div class="value">Rs&nbsp;704.00</div>
-                    </div>
-                </div>
-            </aside>
-        </div>        
->>>>>>> 39f13eeb3db30fde84b7013d91550a8c14abdca5
     </section>
   </main>
 </body>
