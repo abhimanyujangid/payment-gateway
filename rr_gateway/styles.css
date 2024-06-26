@@ -95,6 +95,69 @@ select {
   display: flex;
   justify-content: space-between;
 }
+.Billing-address-section {
+  margin: 20px 0;
+}
+
+.Billing-address-container h1 {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.payment-option {
+  border: 1px solid grey;
+  display: flex;
+  height: 50px;
+  border-radius: 5px 5px 0 0;
+  align-items: center;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.payment-option-2 {
+  border-radius: 0 0 5px 5px;
+}
+
+.payment-option:hover,
+.payment-option.selected {
+  border: 1px solid rgb(54, 108, 207);
+  background-color: rgb(244, 250, 252);
+}
+
+.payment-option span h3 {
+  font-weight: 200;
+}
+
+.payment-option input {
+  margin: 0 12px;
+}
+
+.billing-form {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+
+.billing-form h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.billing-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.billing-form input,
+.billing-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
 /* Right section */
 order-summary .header .title {

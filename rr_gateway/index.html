@@ -53,6 +53,51 @@
           <p>Rs 200.00</p>
         </div>
       </section>
+      <!-- Billing address -->
+      <section class="Billing-address-section">
+        <div class="Billing-address-container">
+          <h1>Billing address</h1>
+          <form class="Billing-address-options">
+            <label class="payment-option">
+              <input type="radio" name="billing" value="same_as_shipping" onclick="selectOption(this)">
+              <span>
+                <h3>Same as shipping address</h3>
+              </span>
+            </label>
+            <label class="payment-option payment-option-2">
+              <input type="radio" name="billing" value="different_billing" onclick="selectOption(this)">
+              <span>
+                <h3>Use a different billing address</h3>
+              </span>
+            </label>
+          </form>
+        </div>
+        <div id="billing-form" class="billing-form">
+          <form>
+            <select id="country" name="country" aria-placeholder="as">
+              <option value="Mauritius">Mauritius</option>
+              <option value="Country1">Country1</option>
+              <option value="Country2">Country2</option>
+              <option value="Country3">Country3</option>
+              <option value="Country4">Country4</option>
+              <option value="Country5">Country5</option>
+              <option value="Country6">Country6</option>
+              <option value="Country7">Country7</option>
+              <option value="Country8">Country8</option>
+              <option value="Country9">Country9</option>
+              <option value="Country10">Country10</option>
+            </select>
+            <input type="text" id="first-name" name="first-name" placeholder="First name" required>
+            <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
+            <input type="text" id="company" name="company" placeholder="Company (optional)">
+            <input type="text" id="address" name="address" required placeholder="Address">
+            <input type="text" id="apartment" name="apartment" placeholder="Apartment, suite, etc. (optional)">
+            <input type="text" id="city" name="city" required placeholder="City">
+            <input type="text" id="postal-code" name="postal-code" placeholder="Postal code (optional)">
+            <input type="tel" id="phone" name="phone" placeholder="Phone (optional)">
+          </form>
+        </div>
+      </section>
     </section>
     <section class="right-side">
       <link rel="stylesheet" href="right.css">
@@ -102,6 +147,29 @@
       </div>
     </section>
   </main>
+  <script>
+    function selectOption(radio) {
+      // Remove 'selected' class from all labels
+      var options = document.querySelectorAll('.payment-option');
+      options.forEach(function (option) {
+        option.classList.remove('selected');
+      });
+
+      // Add 'selected' class to the clicked label
+      var parentLabel = radio.closest('.payment-option');
+      parentLabel.classList.add('selected');
+
+      // Show or hide the billing form based on the selected option
+      var billingForm = document.getElementById('billing-form');
+      if (radio.value === 'different_billing') {
+        billingForm.style.display = 'block';
+      } else {
+        billingForm.style.display = 'none';
+      }
+    }
+
+
+  </script>
 </body>
 
 </html>
