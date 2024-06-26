@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: YourPassword
+      POSTGRES_DB: ShoppingCartDb
+    ports:
+      - "5432:5432"
+    networks:
+      - shoppingcart-network
+
+  shoppingcart:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Host=postgres;Database=ShoppingCartDb;Username=postgres;Password=YourPassword"
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgres
+    networks:
+      - shoppingcart-network
+
+networks:
+  shoppingcart-network:
