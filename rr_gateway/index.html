@@ -53,6 +53,59 @@
           <p>Rs 200.00</p>
         </div>
       </section>
+      <!-- Payment -->
+      <section class="payment-section">
+        <div class="payment-container">
+          <h1>Payment</h1>
+          <p>All transactions are secure and encrypted.</p>
+          <form class="payment-options">
+            <label class="payment-option">
+              <input type="radio" name="payment" value="bank_transfer" onclick="selectOption(this)">
+              <span>
+                <h3>BANK TRANSFER</h3>
+              </span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="mcb_transfer" onclick="selectOption(this)">
+              <span>
+                <h3>MCB TRANSFER OR JUICE</h3>
+              </span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="cash_deposit" onclick="selectOption(this)">
+              <span>
+                <h3>CASH DEPOSIT AT BANK</h3>
+              </span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="myt" onclick="selectOption(this)">
+              <span>
+                <h3>PAY with My.t</h3>
+              </span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="cim_finance" onclick="selectOption(this)">
+              <span>
+                <h3>PAY WITH CIM FINANCE</h3>
+              </span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="pop_credit_card" onclick="selectOption(this)">
+              <span>
+                <h3>POP OR CREDIT CARD PAYMENT</h3>
+              </span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="blink_emtel" onclick="selectOption(this)">
+              <span>
+                <h3>blink by Emtel</h3>
+              </span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="rogers_capital" onclick="selectOption(this)">
+              <span>
+                <h3>PAY WITH ROGERS CAPITAL</h3>
+                
       <!-- Billing address -->
       <section class="Billing-address-section">
         <div class="Billing-address-container">
@@ -103,9 +156,6 @@
       <link rel="stylesheet" href="right.css">
       <link rel="stylesheet" href="right_side.css">
       <div class="order-summary">
-        <div class="header">
-          <h2 class="title">Order summary</h2>
-        </div>
         <aside>
           <div class="shopping-cart">
             <div class="product-list">
@@ -115,7 +165,7 @@
                     alt="Product Image">
                 </div>
                 <div class="description">Mustard Slim Fit Essential Crew Neck T-Shirt</div>
-                <div class="quantity">1 x</div>
+                <!-- <div class="quantity">1 x</div> -->
                 <div class="price">Rs&nbsp;504.00</div>
               </div>
             </div>
@@ -123,25 +173,27 @@
           <div class="discount-form">
             <form action="" method="POST" id="discountForm">
               <div class="input-field">
-                <label for="couponCode">Coupon Code</label>
-                <input type="text" id="couponCode" name="couponCode" placeholder="Enter coupon code">
+                <input type="text" id="couponCode" name="couponCode" placeholder="Gift Card or Store Credit Code">
               </div>
-              <button type="submit" disabled>Apply</button>
+              <button style="font-weight: 600;"  type="submit" disabled> Apply</button>
             </form>
           </div>
           <div class="cost-summary">
             <div class="cost-item">
-              <div class="label">Subtotal</div>
+              <p>Subtotal</p>
               <div class="value">Rs&nbsp;504.00</div>
             </div>
             <div class="cost-item">
-              <div class="label">Shipping</div>
+              <p>Shipping</p>
               <div class="value">Rs&nbsp;200.00</div>
             </div>
             <div class="cost-item total">
               <div class="label">Total</div>
               <div class="value">Rs&nbsp;704.00</div>
             </div>
+            <p style="color: grey;">Including Rs 0.00 in taxes</p>
+            <br>
+            <p style="font-weight: 600;">TOTAL SAVINGS Rs 56.00</p>
           </div>
         </aside>
       </div>
