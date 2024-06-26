@@ -53,12 +53,54 @@
           <p>Rs 200.00</p>
         </div>
       </section>
-
-
     </section>
-    <section class="right-side">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis minus autem rerum ipsam
-      ut sequi quasi quisquam veniam beatae, illo iure quibusdam, nostrum odit minima dolorum recusandae placeat ratione
-      debitis!</section>
+    <section class="right-side">
+      <link rel="stylesheet" href="right.css">
+      <link rel="stylesheet" href="right_side.css">
+      <div class="order-summary">
+        <div class="header">
+          <h2 class="title">Order summary</h2>
+        </div>
+        <aside>
+          <div class="shopping-cart">
+            <div class="product-list">
+              <div class="product">
+                <div class="product-image">
+                  <img src="https://cdn.shopify.com/s/files/1/0259/9531/3248/files/D11369_64x64.jpg?v=1715931786"
+                    alt="Product Image">
+                </div>
+                <div class="description">Mustard Slim Fit Essential Crew Neck T-Shirt</div>
+                <div class="quantity">1 x</div>
+                <div class="price">Rs&nbsp;504.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="discount-form">
+            <form action="" method="POST" id="discountForm">
+              <div class="input-field">
+                <label for="couponCode">Coupon Code</label>
+                <input type="text" id="couponCode" name="couponCode" placeholder="Enter coupon code">
+              </div>
+              <button type="submit" disabled>Apply</button>
+            </form>
+          </div>
+          <div class="cost-summary">
+            <div class="cost-item">
+              <div class="label">Subtotal</div>
+              <div class="value">Rs&nbsp;504.00</div>
+            </div>
+            <div class="cost-item">
+              <div class="label">Shipping</div>
+              <div class="value">Rs&nbsp;200.00</div>
+            </div>
+            <div class="cost-item total">
+              <div class="label">Total</div>
+              <div class="value">Rs&nbsp;704.00</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
   </main>
 </body>
 
