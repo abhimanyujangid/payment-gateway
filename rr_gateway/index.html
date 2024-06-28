@@ -33,7 +33,7 @@
           <option value="Mauritius">Mauritius</option>
           <!-- Add more countries as needed -->
         </select>
-        <div class="first-last">
+        <div class="first-last-name">
           <input type="text" placeholder="First name" id="first-name">
           <input type="text" placeholder="Last name" id="last-name">
         </div>
@@ -55,19 +55,58 @@
           <p>Rs 200.00</p>
         </div>
       </section>
-      <!-- Billing address -->
-      <section class="Billing-address-section">
-        <div class="Billing-address-container">
-          <h1>Billing address</h1>
-          <form class="Billing-address-options">
+      <!-- Payment Section -->
+      <section class="payment-section">
+        <div class="payment-container">
+          <h1>Payment</h1>
+          <p>All transactions are secure and encrypted.</p>
+          <form class="payment-options">
             <label class="payment-option">
-              <input type="radio" name="billing" value="same_as_shipping" onclick="selectOption(this)">
+              <input type="radio" name="payment" id="zwenn_card_payment" value="zwenn_card_payment"
+                onclick="selectPaymentOption(this)">
+              <span>
+                <h3> Card Payment</h3>
+              </span>
+            </label>
+            <label class="payment-option payment-option-2">
+              <input type="radio" name="payment" id="zwenn_qr_code" value="zwenn_qr_code"
+                onclick="selectPaymentOption(this)">
+              <span>
+                <h3>Scan & Pay</h3>
+              </span>
+            </label>
+          </form>
+        </div>
+        <div id="payment-form" class="payment-form">
+          <div id="card-details-form" class="card-details-form">
+            <h2>Card Details</h2>
+            <input type="text" placeholder="Card Holder Name" id="card-holder-name">
+            <input type="text" placeholder="Account Number" id="account-number">
+            <input type="text" placeholder="Expiry Date (MM/YY)" id="expiry-date">
+            <input type="text" placeholder="CVV" id="cvv">
+          </div>
+          <div id="qr-code" class="qr-code">
+            <div class="image-section">
+              <img src="img/merchant_qr_code.png" alt="QR Code">
+              <img src="img/maucas.png" alt="" id="maucas-img">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Billing Address Section -->
+      <section class="billing-address-section">
+        <div class="billing-address-container">
+          <h1>Billing address</h1>
+          <form class="billing-address-options">
+            <label class="billing-option">
+              <input type="radio" name="billing" value="same_as_shipping" onclick="selectBillingOption(this)">
               <span>
                 <h3>Same as shipping address</h3>
               </span>
             </label>
-            <label class="payment-option payment-option-2">
-              <input type="radio" name="billing" value="different_billing" onclick="selectOption(this)">
+            <label class="billing-option billing-option-2">
+              <input type="radio" name="billing" value="different_billing" onclick="selectBillingOption(this)">
               <span>
                 <h3>Use a different billing address</h3>
               </span>
@@ -75,82 +114,92 @@
           </form>
         </div>
         <div id="billing-form" class="billing-form">
-          <form>
-            <select id="country" name="country" aria-placeholder="as">
+          <form class="billing-address-form">
+            <select id="country">
               <option value="Mauritius">Mauritius</option>
-              <option value="Country1">Country1</option>
-              <option value="Country2">Country2</option>
-              <option value="Country3">Country3</option>
-              <option value="Country4">Country4</option>
-              <option value="Country5">Country5</option>
-              <option value="Country6">Country6</option>
-              <option value="Country7">Country7</option>
-              <option value="Country8">Country8</option>
-              <option value="Country9">Country9</option>
-              <option value="Country10">Country10</option>
+              <!-- Add more countries as needed -->
             </select>
-            <input type="text" id="first-name" name="first-name" placeholder="First name" required>
-            <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
-            <input type="text" id="company" name="company" placeholder="Company (optional)">
-            <input type="text" id="address" name="address" required placeholder="Address">
-            <input type="text" id="apartment" name="apartment" placeholder="Apartment, suite, etc. (optional)">
-            <input type="text" id="city" name="city" required placeholder="City">
-            <input type="text" id="postal-code" name="postal-code" placeholder="Postal code (optional)">
-            <input type="tel" id="phone" name="phone" placeholder="Phone (optional)">
+            <div class="first-last-name">
+              <input type="text" placeholder="First name" id="first-name">
+              <input type="text" placeholder="Last name" id="last-name">
+            </div>
+            <input type="text" placeholder="Company (optional)" id="company">
+            <input type="text" placeholder="Address" id="address">
+            <input type="text" placeholder="Apartment, suite, etc. (optional)" id="apartment">
+            <div class="city-postal-add">
+              <input type="text" placeholder="City" id="city">
+              <input type="text" placeholder="Postal code (optional)" id="postal-code">
+            </div>
+            <input type="text" placeholder="Phone" id="phone">
           </form>
         </div>
       </section>
+      <section class="complet-order-bottom">
+        <button type="submit">
+          <p>Complete order</p>
+        </button>
+      </section>
+
+      <hr>
+      <section class="policy-shipping-privacy">
+        <a href="#">Refund policy</a>
+        <a href="#">Shipping policy</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Term of service</a>
+      </section>
     </section>
     <section class="right-side">
-      <link rel="stylesheet" href="right.css">
-      <link rel="stylesheet" href="right_side.css">
-      <div class="order-summary">
-        <div class="header">
-          <h2 class="title">Order summary</h2>
-        </div>
-        <aside>
-          <div class="shopping-cart">
-            <div class="product-list">
-              <div class="product">
-                <div class="product-image">
-                  <img src="https://cdn.shopify.com/s/files/1/0259/9531/3248/files/D11369_64x64.jpg?v=1715931786"
-                    alt="Product Image">
+      <div class="right-side-inside">
+        <link rel="stylesheet" href="right.css">
+        <link rel="stylesheet" href="right_side.css">
+        <div class="order-summary">
+          <aside>
+            <div class="shopping-cart">
+              <div class="product-list">
+                <div class="product">
+                  <div class="product-image">
+                    <img src="https://cdn.shopify.com/s/files/1/0259/9531/3248/files/D11369_64x64.jpg?v=1715931786"
+                      alt="Product Image">
+                  </div>
+                  <div class="description">Mustard Slim Fit Essential Crew Neck T-Shirt</div>
+                  <!-- <div class="quantity">1 x</div> -->
+                  <div class="price">Rs&nbsp;504.00</div>
                 </div>
-                <div class="description">Mustard Slim Fit Essential Crew Neck T-Shirt</div>
-                <div class="quantity">1 x</div>
-                <div class="price">Rs&nbsp;504.00</div>
               </div>
             </div>
-          </div>
-          <div class="discount-form">
-            <form action="" method="POST" id="discountForm">
-              <div class="input-field">
-                <label for="couponCode">Coupon Code</label>
-                <input type="text" id="couponCode" name="couponCode" placeholder="Enter coupon code">
+            <div class="discount-form">
+              <form action="" method="POST" id="discountForm">
+                <div class="input-field">
+                  <input type="text" id="couponCode" name="couponCode" placeholder="Gift Card or Store Credit Code">
+                </div>
+                <button style="font-weight: 600;" type="submit" disabled> Apply</button>
+              </form>
+            </div>
+            <div class="cost-summary">
+              <div class="cost-item">
+                <p>Subtotal</p>
+                <div class="value">Rs&nbsp;504.00</div>
               </div>
-              <button type="submit" disabled>Apply</button>
-            </form>
-          </div>
-          <div class="cost-summary">
-            <div class="cost-item">
-              <div class="label">Subtotal</div>
-              <div class="value">Rs&nbsp;504.00</div>
+              <div class="cost-item">
+                <p>Shipping</p>
+                <div class="value">Rs&nbsp;200.00</div>
+              </div>
+              <br>
+              <div class="cost-item total">
+                <div class="label">Total</div>
+                <div class="value">Rs&nbsp;704.00</div>
+              </div>
+              <p style="color: grey;">Including Rs 0.00 in taxes</p>
+              <br>
+              <p style="font-weight: 600;">TOTAL SAVINGS Rs 56.00</p>
             </div>
-            <div class="cost-item">
-              <div class="label">Shipping</div>
-              <div class="value">Rs&nbsp;200.00</div>
-            </div>
-            <div class="cost-item total">
-              <div class="label">Total</div>
-              <div class="value">Rs&nbsp;704.00</div>
-            </div>
-          </div>
-        </aside>
+          </aside>
+        </div>
       </div>
     </section>
   </main>
   <script>
-    function selectOption(radio) {
+    function selectPaymentOption(radio) {
       // Remove 'selected' class from all labels
       var options = document.querySelectorAll('.payment-option');
       options.forEach(function (option) {
@@ -161,6 +210,33 @@
       var parentLabel = radio.closest('.payment-option');
       parentLabel.classList.add('selected');
 
+      // Show or hide the payment form based on the selected option
+      var cardDetailsForm = document.getElementById('card-details-form');
+      var qrCode = document.getElementById('qr-code');
+      var paymentForm = document.getElementById('payment-form');
+
+      paymentForm.style.display = 'block';
+
+      if (radio.value === 'zwenn_card_payment') {
+        cardDetailsForm.style.display = 'block';
+        qrCode.style.display = 'none';
+      } else if (radio.value === 'zwenn_qr_code') {
+        cardDetailsForm.style.display = 'none';
+        qrCode.style.display = 'block';
+      }
+    }
+
+    function selectBillingOption(radio) {
+      // Remove 'selected' class from all labels
+      var options = document.querySelectorAll('.billing-option');
+      options.forEach(function (option) {
+        option.classList.remove('selected');
+      });
+
+      // Add 'selected' class to the clicked label
+      var parentLabel = radio.closest('.billing-option');
+      parentLabel.classList.add('selected');
+
       // Show or hide the billing form based on the selected option
       var billingForm = document.getElementById('billing-form');
       if (radio.value === 'different_billing') {
@@ -169,8 +245,6 @@
         billingForm.style.display = 'none';
       }
     }
-
-
   </script>
 </body>
 
